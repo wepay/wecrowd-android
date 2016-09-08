@@ -1,0 +1,16 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.wepay.wecrowd.wecrowd.CampaignFeedActivity">
+
+    <ListView
+        android:id="@+id/listview_campaigns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme_neutral_light"
+        android:divider="@android:color/transparent" />
+</RelativeLayout>

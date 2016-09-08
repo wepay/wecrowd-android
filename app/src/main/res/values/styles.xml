@@ -1,0 +1,88 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/AppTheme.ActionBarTheme</item>
+        <item name="colorPrimary">@color/theme_orange</item>
+        <item name="colorPrimaryDark">@color/theme_dark_orange</item>
+        <item name="android:colorBackground">@color/theme_light</item>
+    </style>
+
+    <style name="AppTheme.ActionBarTheme" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/theme_light</item>
+    </style>
+
+    <!--Buttons-->
+    <style name="ButtonAction" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_light</item>
+        <item name="android:background">@drawable/button_action</item>
+    </style>
+
+    <!--EditText-->
+    <style name="EditTextSingleLine" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:inputType">text</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="EditTextPassword" parent="EditTextSingleLine">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <!-- TextView-->
+    <style name="TitleText" parent="TextView">
+        <item name="android:textColor">@color/theme_orange</item>
+        <item name="android:textSize">@dimen/activity_title_text_size</item>
+    </style>
+
+    <style name="TextView" parent="android:Widget.TextView">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewCentered" parent="TextView">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextViewLeft" parent="TextView">
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="TextViewSingleLine" parent="TextViewCentered">
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!--ImageView-->
+    <style name="HeaderImageFull">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <!--Linear Layout-->
+    <style name="LinearTaggedTextEntry">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Application theme colors -->
+    <color name="theme_blue">#66BCE4</color>
+    <color name="theme_dark_blue">#ff4f92b0</color>
+    <color name="theme_orange">#E84E26</color>
+    <color name="theme_dark_orange">#ffc44220</color>
+    <color name="theme_light">#ffffffff</color>
+    <color name="theme_neutral">#ffb9b9b9</color>
+    <color name="theme_neutral_light">#fff5f5f5</color>
+    <color name="theme_green">#ff55cc61</color>
+
+</resources>

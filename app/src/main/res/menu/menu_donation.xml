@@ -1,0 +1,18 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/menu_donation">
+
+    <item
+        android:id="@+id/menu_donation_manual_payment"
+        android:title="@string/title_donation_manual"
+        android:orderInCategory="0"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menu_donation_swipe_payment"
+        android:title="@string/title_donation_swipe"
+        android:orderInCategory="1"
+        app:showAsAction="ifRoom" />
+</menu>
+

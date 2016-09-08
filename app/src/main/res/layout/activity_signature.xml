@@ -1,0 +1,40 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+
+    tools:context="com.wepay.wecrowd.wecrowd.SignatureActivity">
+
+    <TextView
+        android:id="@+id/signature_instruction"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="@string/hint_signature" />
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/signature_pad"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/view_border"
+        app:penColor="@android:color/black"
+        android:layout_alignTop="@id/signature_instruction"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        style="@style/ButtonAction"
+        android:onClick="didSubmitSignature"
+        android:text="@string/title_submit"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wepay.wecrowd.wecrowd" >
+
+    <!--Permission Settings-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.WelcomeActivity" />
+        </activity>
+        <activity
+            android:name=".CampaignFeedActivity"
+            android:label="@string/title_activity_campaign_feed"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".CampaignDetailActivity"
+            android:label="@string/title_activity_campaign_detail"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.CampaignFeedActivity" />
+        </activity>
+        <activity
+            android:name=".ManualPaymentActivity"
+            android:label="@string/title_activity_manual_payment"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.CampaignDetailActivity" />
+        </activity>
+        <activity
+            android:name=".SwipePaymentActivity"
+            android:label="@string/title_activity_swipe_payment"
+            android:windowSoftInputMode="stateHidden"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.CampaignDetailActivity" />
+        </activity>
+        <activity
+            android:name=".SignatureActivity"
+            android:label="@string/title_activity_signature"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.wepay.wecrowd.wecrowd.SwipePaymentActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">WeCrowd</string>
+
+    <!--Titles-->
+    <string name="title_activity_login">Sign In</string>
+    <string name="title_activity_campaign_feed">Campaigns</string>
+    <string name="title_activity_campaign_detail">Details</string>
+    <string name="title_activity_manual_payment">Manual Entry</string>
+    <string name="title_activity_swipe_payment">Swipe Card</string>
+    <string name="title_activity_signature">Signature</string>
+
+    <string name="title_button_login">Login</string>
+    <string name="title_login">Login as Merchant</string>
+    <string name="title_browse">Browse Campaigns</string>
+    <string name="title_button_donate">Donate</string>
+    <string name="title_button_accept_donation">Accept Donation</string>
+    <string name="title_donation_manual">Manual entry</string>
+    <string name="title_donation_swipe">Swipe card</string>
+    <string name="title_status_swipe">. . .</string>
+    <string name="title_instruction_donation">Enter donation amount</string>
+    <string name="title_instruction_manual_entry">Enter your payment information</string>
+    <string name="title_action_clear">Clear</string>
+    <string name="title_submit">Submit</string>
+
+    <!--Errors-->
+    <string name="error_login_title">Unable to login</string>
+    <string name="error_login_preface">Login failed</string>
+    <string name="error_fetch_title">Unable to fetch</string>
+    <string name="error_campaign_detail_fetch_preface">Fetching campaign details failed</string>
+    <string name="error_campaign_image_fetch_preface">Fetching the campaign image failed</string>
+    <string name="error_donation_preface">Unable to complete the donation</string>
+    <string name="error_tokenization_preface">Unable to tokenize with given information</string>
+    <string name="error_swiper_title">Unable to complete card swipe</string>
+    <string name="error_swiper_preface">The card swipe failed</string>
+    <string name="error_campaigns_fetch_preface">Fetching the campaigns failed</string>
+    <string name="error_title_retry">Retry</string>
+
+    <!--Dialog-->
+    <string name="dialog_button_close">Close</string>
+
+    <!--Hints-->
+    <string name="hint_login">Email address</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_month">MM</string>
+    <string name="hint_year">YYYY</string>
+    <string name="hint_signature">Please sign</string>
+
+    <!--Demo placeholders-->
+    <string name="demo_email">wp.android.example@wepay.com</string>
+    <string name="demo_password">password</string>
+    <string name="demo_campaign_description">Bacon ipsum dolor amet alcatra brisket swine filet
+        mignon pork corned beef meatball. Short ribs rump prosciutto ribeye drumstick, filet mignon
+        sausage ham kielbasa capicola beef ribs bacon alcatra fatback. Kielbasa alcatra andouille
+        t-bone. Pancetta shankle beef chuck picanha. </string>
+    <string name="demo_donation_description">"WeCrowd Android Demo Donation"</string>
+    <string name="demo_address_line">350 Convention Way</string>
+    <string name="demo_address_locality">Redwood City</string>
+    <string name="demo_address_postal_code">94063</string>
+    <string name="demo_address_country_code">US</string>
+
+    <string name="title_donation">Amount</string>
+    <string name="title_first_name">First Name</string>
+    <string name="title_last_name">Last Name</string>
+    <string name="title_email">Email</string>
+    <string name="title_card_number">Card Number</string>
+    <string name="title_expiration">Expiration</string>
+    <string name="title_cvv">CVV</string>
+    <string name="title_zip_code">Zip Code</string>
+
+    <string name="demo_payer_donation_amount">50</string>
+    <string name="demo_payer_first_name">WeCrowd-Android</string>
+    <string name="demo_payer_last_name">Demo</string>
+    <string name="demo_payer_email">wp.android.example@wepay.com</string>
+    <string name="demo_payer_card_number">5496198584584769</string>
+    <string name="demo_payer_expiration_month">04</string>
+    <string name="demo_payer_expiration_year">2020</string>
+    <string name="demo_payer_cvv">123</string>
+    <string name="demo_payer_expiration_zip_code">94306</string>
+
+    <!--Generic placeholders-->
+    <string name="placeholder_generic_title">TITLE</string>
+    <string name="placeholder_generic_end_date">END DATE</string>
+    <string name="placeholder_generic_image">IMAGE</string>
+    <string name="placeholder_generic_progress">PROGRESS</string>
+
+    <!--Messages-->
+    <string name="message_welcome">Welcome!</string>
+    <string name="message_processing">Processing&#8230;</string>
+    <string name="message_success_donation">Donation successful!</string>
+    <string name="message_failure_donation">Donation failed</string>
+    <string name="message_failure_tokenization">Tokenization failed</string>
+    <string name="message_swiper_not_connected">Please connect the swiper and wait</string>
+    <string name="message_swiper_start">Swiper status</string>
+    <string name="message_swiper_waiting">Waiting for swipe&#8230;</string>
+    <string name="message_swiper_detected">Swipe detected!</string>
+    <string name="message_swiper_tokenizing">Tokenizing</string>
+    <string name="message_swiper_stopped">Swiper stopped</string>
+    <string name="message_signature_stored">Signature stored!</string>
+    <string name="message_user_try_again">Please try again</string>
+</resources>
